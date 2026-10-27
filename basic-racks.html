@@ -31,9 +31,9 @@
     .button:hover { background: #e2a079; border-color: #e2a079; color: #0b0a09; }
     .button.secondary { background: transparent; border-color: #a88473; }
     .button.secondary:hover { background: #e2a079; border-color: #e2a079; }
-    .download { padding: 28px; border: 1px solid #704438; background: #1d1311; }
+    .download { margin-top: 48px; padding: 28px; border: 1px solid #704438; background: #1d1311; }
     .download p { margin-bottom: 18px; color: #cbbdb2; }
-    .guide { margin-top: 48px; }
+    .guide { margin-top: 0; }
     .guide > p { margin-bottom: 18px; color: #cbbdb2; }
     .rack-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
     .rack-list li { padding: 14px; border: 1px solid #49332c; background: #151110; }
@@ -75,14 +75,6 @@
     </div>
   </header>
   <main class="wrap">
-    <section class="download" aria-labelledby="download-title">
-      <h2 id="download-title">Free download</h2>
-      <p>No donation is required. The ZIP contains seven Ableton Live rack files (.adg).</p>
-      <div class="actions">
-        <a class="button" href="AnaWaves%20Basic%20Racks%20For%20Ableton.zip" download>Download Basic Racks ZIP ↓</a>
-      </div>
-    </section>
-
     <section class="guide" aria-labelledby="guide-title">
       <h2 id="guide-title">What do the Basic Racks do?</h2>
       <p>A quick guide to the seven racks in the pack.</p>
@@ -95,6 +87,14 @@
         <li><h3>AnaWaves - Move My Mids</h3><p>Moves the midrange while keeping a separate low path.</p></li>
         <li><h3>AnaWaves - Real Split</h3><p>Routes high, mid and low bands to separate chains.</p></li>
       </ul>
+    </section>
+
+    <section class="download" aria-labelledby="download-title">
+      <h2 id="download-title">Free download</h2>
+      <p>No donation is required. The ZIP contains seven Ableton Live rack files (.adg).</p>
+      <div class="actions">
+        <a class="button" href="AnaWaves%20Basic%20Racks%20For%20Ableton.zip" download>Download Basic Racks ZIP ↓</a>
+      </div>
     </section>
   </main>
   <footer><div class="wrap">© AnaWaves</div></footer>
