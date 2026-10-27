@@ -10,15 +10,16 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="AnaWaves — Artist and releases">
   <meta property="og:description" content="AnaWaves is the music project of Kovacs B. Mate.">
-  <meta property="og:image" content="https://balazskovacs375-tech.github.io/anawaves-factsheet/anawaves-art.png">
+  <meta property="og:image" content="https://balazskovacs375-tech.github.io/anawaves-factsheet/spotify-banner.webp">
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #0b0a09; color: #eee6d8; font: 16px/1.55 Arial, Helvetica, sans-serif; }
-    .banner { width: 100%; height: clamp(300px, 39vw, 560px); overflow: hidden; background: #000; }
-    .banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; }
+    .banner { position: relative; width: 100%; height: clamp(300px, 42.9vw, 620px); overflow: hidden; background: #130e0d; }
+    .banner::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, rgba(0, 0, 0, .64)); pointer-events: none; }
+    .banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .banner h1 { position: absolute; z-index: 1; left: clamp(20px, 4vw, 64px); bottom: clamp(22px, 4vw, 58px); margin: 0; color: #fff; font-size: clamp(44px, 7vw, 96px); line-height: .95; letter-spacing: -.055em; text-shadow: 0 2px 24px rgba(0, 0, 0, .45); }
     main { width: min(100% - 40px, 760px); margin: 0 auto; padding: clamp(36px, 6vw, 70px) 0 80px; }
-    h1 { margin: 0 0 12px; font-size: clamp(32px, 5vw, 52px); line-height: 1.1; letter-spacing: -.035em; }
     .bio { max-width: 680px; margin: 0; color: #c9bdb1; font-size: clamp(17px, 2vw, 20px); }
     h2 { margin: 52px 0 14px; font-size: 20px; letter-spacing: .08em; text-transform: uppercase; }
     ul { margin: 0; padding: 0; list-style: none; border-top: 1px solid #574039; }
@@ -36,7 +37,7 @@
     .support-note a:hover { color: #e8aa79; }
     a:focus-visible { outline: 2px solid #e8aa79; outline-offset: 4px; }
     @media (max-width: 600px) {
-      .banner { height: clamp(260px, 77vw, 390px); }
+      .banner { height: clamp(250px, 62vw, 330px); }
       main { width: min(100% - 32px, 760px); padding-bottom: 48px; }
       h2 { margin-top: 40px; }
     }
@@ -44,10 +45,10 @@
 </head>
 <body>
   <header class="banner">
-    <img src="anawaves-art.png" width="1254" height="1254" alt="AnaWaves artwork showing two faces in red, black and gold" fetchpriority="high">
+    <img src="spotify-banner.webp" width="1493" height="640" alt="AnaWaves artist banner: dark red and gold collage with two faces and city scenes" fetchpriority="high">
+    <h1>AnaWaves</h1>
   </header>
   <main>
-    <h1>AnaWaves</h1>
     <p class="bio">AnaWaves is the music project of Kovacs B. Mate, a Hungarian neurofunk and drum &amp; bass producer and sound designer.</p>
     <h2>Releases</h2>
     <ul>
