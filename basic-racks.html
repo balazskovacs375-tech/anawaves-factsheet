@@ -18,13 +18,12 @@
     a { color: inherit; }
     a:focus-visible { outline: 2px solid #f0bd8e; outline-offset: 4px; }
     .wrap { width: min(100% - 36px, 860px); margin: 0 auto; }
-    header { padding: 28px 0 46px; border-bottom: 1px solid #50352e; background: radial-gradient(circle at 85% 10%, #582b24 0, #1b1010 38%, #0b0a09 75%); }
-    .back { display: inline-block; margin-bottom: 58px; color: #d6b6a4; text-decoration: none; font-size: 14px; }
+    header { padding: 24px 0 32px; border-bottom: 1px solid #50352e; background: radial-gradient(circle at 85% 10%, #582b24 0, #1b1010 38%, #0b0a09 75%); }
+    .back { display: inline-block; margin-bottom: 34px; color: #d6b6a4; text-decoration: none; font-size: 14px; }
     .back:hover { color: #fff; }
     .eyebrow { margin: 0 0 12px; color: #e6a27d; font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
-    h1 { max-width: 720px; margin: 0; font-size: clamp(38px, 7vw, 70px); line-height: 1.03; letter-spacing: -.055em; }
-    .intro { max-width: 640px; margin: 22px 0 0; color: #cbbdb2; font-size: 18px; }
-    main { padding: 34px 0 80px; }
+    h1 { margin: 0; font-size: clamp(23px, 4.4vw, 48px); line-height: 1.08; letter-spacing: -.045em; white-space: nowrap; }
+    main { padding: 34px 0 70px; }
     h2 { margin: 0 0 12px; font-size: clamp(27px, 4vw, 36px); line-height: 1.15; letter-spacing: -.025em; }
     p { margin: 0; }
     .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
@@ -33,20 +32,29 @@
     .button.secondary { background: transparent; border-color: #a88473; }
     .button.secondary:hover { background: #e2a079; border-color: #e2a079; }
     .download { padding: 28px; border: 1px solid #704438; background: #1d1311; }
-    .download p, .support p { margin-bottom: 18px; color: #cbbdb2; }
-    .note { margin-top: 12px; color: #a99b90; font-size: 14px; }
-    .guide { margin-top: 64px; }
-    .guide > p { margin-bottom: 22px; color: #cbbdb2; }
-    .rack-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
-    .rack-list li { padding: 20px; border: 1px solid #49332c; background: #151110; }
-    .rack-list h3 { margin: 0 0 8px; color: #f4e8dc; font-size: 18px; }
-    .rack-list p { color: #cbbdb2; }
-    .support { margin-top: 64px; padding-top: 30px; border-top: 1px solid #50352e; }
+    .download p { margin-bottom: 18px; color: #cbbdb2; }
+    .guide { margin-top: 48px; }
+    .guide > p { margin-bottom: 18px; color: #cbbdb2; }
+    .rack-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .rack-list li { padding: 14px; border: 1px solid #49332c; background: #151110; }
+    .rack-list li:last-child { grid-column: 2; }
+    .rack-list h3 { margin: 0 0 6px; color: #f4e8dc; font-size: 15px; line-height: 1.3; }
+    .rack-list p { color: #cbbdb2; font-size: 14px; line-height: 1.45; }
+    .support { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: 26px; padding: 18px 20px; border: 1px solid #704438; background: rgba(21, 14, 13, .85); }
+    .support h2 { margin: 0 0 5px; font-size: 19px; }
+    .support p { max-width: 520px; color: #cbbdb2; font-size: 14px; }
+    .support .button { min-height: 42px; padding: 9px 14px; font-size: 14px; }
     footer { padding: 28px 0 42px; border-top: 1px solid #50352e; color: #a99b90; font-size: 14px; }
-    @media (max-width: 650px) {
-      .back { margin-bottom: 42px; }
+    @media (max-width: 760px) {
+      .rack-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .rack-list li:last-child { grid-column: 1 / -1; width: calc(50% - 5px); justify-self: center; }
+    }
+    @media (max-width: 520px) {
+      .back { margin-bottom: 30px; }
+      h1 { font-size: clamp(19px, 6vw, 28px); }
       .download { padding: 22px; }
       .rack-list { grid-template-columns: 1fr; }
+      .rack-list li:last-child { grid-column: auto; width: auto; }
       .button { width: 100%; }
     }
   </style>
@@ -57,7 +65,13 @@
       <a class="back" href="https://linktr.ee/AnaWaves">← Back to AnaWaves on Linktree</a>
       <p class="eyebrow">AnaWaves · Free Ableton Live pack</p>
       <h1>Basic Racks For Ableton</h1>
-      <p class="intro">Seven audio effect racks in one ZIP. Download the pack, see what each rack is designed to do, and support the artist if you wish.</p>
+      <section class="support" aria-labelledby="support-title">
+        <div>
+          <h2 id="support-title">Support the Artist</h2>
+          <p>If these racks are useful to you, you can support AnaWaves. It is entirely optional; the free download is below.</p>
+        </div>
+        <a class="button secondary" href="https://whydonate.com/fundraising/support-anawaves" target="_blank" rel="noopener noreferrer">Support the Artist ↗</a>
+      </section>
     </div>
   </header>
   <main class="wrap">
@@ -73,21 +87,14 @@
       <h2 id="guide-title">What do the Basic Racks do?</h2>
       <p>A quick guide to the seven racks in the pack.</p>
       <ul class="rack-list">
-        <li><h3>Add Wides</h3><p>Adds stereo width with a separate mid path.</p></li>
+        <li><h3>AnaWaves - Add Wides</h3><p>Adds stereo width with a separate mid path.</p></li>
         <li><h3>AnaWaves - Neuro Spectrum Split</h3><p>Divides the frequency spectrum into bands for separate processing.</p></li>
-        <li><h3>Fat AF</h3><p>Combines saturation and multiband dynamics for added weight.</p></li>
-        <li><h3>LTringliMutator</h3><p>Uses phasing, frequency shifting and drive for movement.</p></li>
-        <li><h3>Move My Mid Harder Bandpass Version</h3><p>Focuses moving effects on a bandpassed midrange.</p></li>
-        <li><h3>Move My Mids</h3><p>Moves the midrange while keeping a separate low path.</p></li>
-        <li><h3>Real Split</h3><p>Routes high, mid and low bands to separate chains.</p></li>
+        <li><h3>AnaWaves - Fat AF</h3><p>Combines saturation and multiband dynamics for added weight.</p></li>
+        <li><h3>AnaWaves - LTringliMutator</h3><p>Uses phasing, frequency shifting and drive for movement.</p></li>
+        <li><h3>AnaWaves - Move My Mid Harder Bandpass Version</h3><p>Focuses moving effects on a bandpassed midrange.</p></li>
+        <li><h3>AnaWaves - Move My Mids</h3><p>Moves the midrange while keeping a separate low path.</p></li>
+        <li><h3>AnaWaves - Real Split</h3><p>Routes high, mid and low bands to separate chains.</p></li>
       </ul>
-      <p class="note">Descriptions are based on the rack files' structure; audio playback has not been independently tested here.</p>
-    </section>
-
-    <section class="support" aria-labelledby="support-title">
-      <h2 id="support-title">Support the Artist</h2>
-      <p>If these racks are useful to you, you can support AnaWaves. It is entirely optional, and the free download remains available above.</p>
-      <a class="button secondary" href="https://whydonate.com/fundraising/support-anawaves" target="_blank" rel="noopener noreferrer">Support the Artist ↗</a>
     </section>
   </main>
   <footer><div class="wrap">© AnaWaves</div></footer>
