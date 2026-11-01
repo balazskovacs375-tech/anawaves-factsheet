@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0a09">
   <title>AnaWaves — Artist and releases</title>
-  <meta name="description" content="AnaWaves is the music project of Kovacs B. Mate. Explore the artist's releases.">
+  <meta name="description" content="Meet AnaWaves, the independent Hungarian neurofunk and drum &amp; bass project of Kovacs B. Mate, and explore its releases in chronological order.">
   <link rel="canonical" href="https://balazskovacs375-tech.github.io/anawaves-factsheet/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="AnaWaves — Artist and releases">
@@ -20,12 +20,15 @@
     .banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
     .banner h1 { position: absolute; z-index: 1; left: clamp(20px, 4vw, 64px); bottom: clamp(22px, 4vw, 58px); margin: 0; color: #fff; font-size: clamp(44px, 7vw, 96px); line-height: .95; letter-spacing: -.055em; text-shadow: 0 2px 24px rgba(0, 0, 0, .45); }
     main { width: min(100% - 40px, 760px); margin: 0 auto; padding: clamp(36px, 6vw, 70px) 0 80px; }
-    .bio { max-width: 680px; margin: 0; color: #c9bdb1; font-size: clamp(17px, 2vw, 20px); }
+    .bio { max-width: 700px; color: #c9bdb1; font-size: clamp(17px, 2vw, 20px); }
+    .bio p { margin: 0 0 20px; }
+    .bio p:last-child { margin-bottom: 0; }
     h2 { margin: 52px 0 14px; font-size: 20px; letter-spacing: .08em; text-transform: uppercase; }
     ul { margin: 0; padding: 0; list-style: none; border-top: 1px solid #574039; }
     li { border-bottom: 1px solid #574039; }
-    li a { display: block; padding: 14px 0; color: #eee6d8; text-decoration: none; font-size: 18px; }
+    li a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; padding: 14px 0; color: #eee6d8; text-decoration: none; font-size: 18px; }
     li a:hover { color: #e8aa79; }
+    li time { flex: none; color: #c9bdb1; font-size: 14px; }
     .support { margin-top: 56px; padding: 36px 0 0; border-top: 1px solid #574039; color: #c9bdb1; }
     .support h2 { margin: 0 0 18px; color: #eee6d8; font-size: clamp(27px, 4vw, 36px); line-height: 1.15; letter-spacing: -.025em; text-transform: none; }
     .support p { max-width: 700px; margin: 0 0 22px; font-size: 17px; line-height: 1.65; }
@@ -40,6 +43,7 @@
       .banner { height: clamp(250px, 62vw, 330px); }
       main { width: min(100% - 32px, 760px); padding-bottom: 48px; }
       h2 { margin-top: 40px; }
+      li a { flex-wrap: wrap; }
     }
   </style>
 </head>
@@ -49,14 +53,18 @@
     <h1>AnaWaves</h1>
   </header>
   <main>
-    <p class="bio">AnaWaves is the music project of Kovacs B. Mate, a Hungarian neurofunk and drum &amp; bass producer and sound designer.</p>
+    <section class="bio" aria-label="About AnaWaves">
+      <p>I'm Kovacs B. Mate, the Hungarian producer and sound designer behind AnaWaves. I make neurofunk and drum &amp; bass with driving rhythms, cinematic atmosphere, and a curiosity for new sounds.</p>
+      <p>AnaWaves is an independent project built around creative freedom and respect for the people who help bring each release to life. I commission and pay fellow artists for my cover art, because their work is part of the world around the music.</p>
+      <p>I'm working toward a body of music with its own sound and visual identity. My plans are to keep releasing music, continue collaborating with visual artists, develop music-making tools such as TransFuzio, To The Future, and Project James, and share production resources as they become ready.</p>
+    </section>
     <h2>Releases</h2>
     <ul>
-      <li><a href="https://open.spotify.com/album/17uUlv7JpuJ0pSAFJcrS3F">Forsaken And Forgotten</a></li>
-      <li><a href="https://open.spotify.com/album/0mi93kUkzSZ7rM5lr1Xy65">Chronicles Of Crisis And Salvation</a></li>
-      <li><a href="https://open.spotify.com/album/7AR0W1K2XXFCHzZpUiKXQ9">Let Me Tell It</a></li>
-      <li><a href="https://open.spotify.com/album/5jTlCziGTNw5i0jpIZa64L">WEAPONIZED</a></li>
-      <li><a href="https://open.spotify.com/album/1HeLsvhOyvO2sXHqAAfZ4Y">Stereo Voices In My Head</a></li>
+      <li><a href="https://open.spotify.com/album/1HeLsvhOyvO2sXHqAAfZ4Y"><span>Stereo Voices In My Head</span><time datetime="2026-01-24">24 Jan 2026</time></a></li>
+      <li><a href="https://open.spotify.com/album/7AR0W1K2XXFCHzZpUiKXQ9"><span>Let Me Tell It</span><time datetime="2026-04-07">7 Apr 2026</time></a></li>
+      <li><a href="https://open.spotify.com/album/5jTlCziGTNw5i0jpIZa64L"><span>WEAPONIZED</span><time datetime="2026-04-07">7 Apr 2026</time></a></li>
+      <li><a href="https://open.spotify.com/album/0mi93kUkzSZ7rM5lr1Xy65"><span>Chronicles Of Crisis And Salvation</span><time datetime="2026-06-20">20 Jun 2026</time></a></li>
+      <li><a href="https://open.spotify.com/album/17uUlv7JpuJ0pSAFJcrS3F"><span>Forsaken And Forgotten</span><time datetime="2026-10-07">7 Oct 2026</time></a></li>
     </ul>
     <section class="support" aria-label="Support AnaWaves">
       <h2>Support the work</h2>
